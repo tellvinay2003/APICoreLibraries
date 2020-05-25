@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="OdlLegacyWebServices.MappingService" CodeBehind="MappingService.svc.cs" %>

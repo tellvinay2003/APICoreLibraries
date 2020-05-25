@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TSDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="MAPPINGS">
+    <Key>
+      <PropertyRef Name="MAPPINGID" />
+    </Key>
+    <Property Name="MAPPINGID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MAPPINGNAME" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="MAPPINGCODE" Type="varchar" MaxLength="5" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TSDBModelStoreContainer">
+    <EntitySet Name="MAPPINGS" EntityType="Self.MAPPINGS" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
